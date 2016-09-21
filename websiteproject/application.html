@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CCG Application</title>
+</head>
+
+<style>
+	a:link{color:white;background-color:transparent;text-decoration:none}
+	a:visited{color:white;background-color:transparent;text-decoration:none}
+	a:hover{color:white;background-color:transparent;text-decoration:none}
+	a:active{color:dimgray;background-color:transparent;text-decoration:underline}
+</style>
+
+<header style = "background-color:darkblue">
+	<h1 style = "color:white;text-align:center;font-size:400%"><a href="F://websiteproject/website.html">CCG</a><span style = "font-size:10%"><hr></span><span style = "font-size:55%">Application</span></h1>
+</header>
+<?php include 'sendmail.php';?>
+<body style = "background-color:black;color:white">
+
+	<form>
+		1) What is your ingame name?<br>
+			<input type = "text" name = "ingame"><br>
+		2) What games are you applying?<br>
+			<input type = "checkbox" name = "game">Defiance<br>
+			<input type = "checkbox" name = "game">CS:GO<br>
+			<input type = "checkbox" name = "game">Garry's Mod<br>
+			<input type = "checkbox" name = "game">Battlefield<br>
+			<input type = "checkbox" name = "game">Left 4 Dead 2<br>
+			<input type = "checkbox" name = "game">Other, specify<br>
+			<input type = "text" name = "othergame"><br>
+		3) How often can you play per week? (in hours)<br>
+			<input type = "text" name = "hours"><br>
+		4) How old are you? (remember, you must be at least 16 to apply)<br>
+			<input type = "text" name = "age"><br>
+		5) Do you have or can you have access to Discord?<br>
+			<form>
+				<input type = "radio" name="dis" value="yes">Yes<br>
+				<input type = "radio" name="dis" value="no">No<br>
+			</form>
+		6) Do you have a mic?<br>
+			<form>
+				<input type = "radio" name="mic" value="yes">Yes<br>
+				<input type = "radio" name="mic" value="no">No<br>
+			</form>
+		7) What is your Steam ID? (use <a href = "http://www.steamidfinder.com" style = "color:red">steamidfinder.com</a> for help)<br>
+			<input type = "text" name = "steamid"><br>
+		8) How did you hear about us?<br>
+			<form>
+				<input type = "radio" name="how" value="member">Member<br>
+				<input type = "radio" name="how" value="lobby">Game Lobby<br>
+				<input type = "radio" name="how" value="sight">Sight of Clantag<br>
+				<input type = "radio" name="how" value="popped">Just popped up<br>
+				<input type = "radio" name="how" value="other">Other, specify<br>
+				<input type = "text"><br>
+			</form>
+		9) If you heard of us through a member, who? (steam id of member)<br>
+			<input type = "text" name = "memID"><br>
+		10) Are you a competitive gamer, casual gamer, or both?
+			<form>
+				<input type = "radio" name="type" value="competitive">Competitive<br>
+				<input type = "radio" name="type" value="casual">Casual<br>
+				<input type = "radio" name="type" value="both">Both<br>
+			</form>
+		<input type = "submit" name = "submit" value = "Submit">
+	</form>
+<body>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CCG Idea Submission</title>
+</head>
+
+<style>
+	a:link{color:white;background-color:transparent;text-decoration:none}
+	a:visited{color:white;background-color:transparent;text-decoration:none}
+	a:hover{color:white;background-color:transparent;text-decoration:none}
+	a:active{color:dimgray;background-color:transparent;text-decoration:underline}
+</style>
+
+<header style = "background-color:darkblue">
+	<h1 style = "color:white;text-align:center;font-size:400%"><a href="F://websiteproject/website.html">CCG</a><span style = "font-size:10%"><hr></span><span style = "font-size:55%">Idea Submission</span></h1>
+</header>
+<?php include 'sendidea.php';?>
+<body style = "background-color:black;color:white">
+
+	<form>
+		Topic<br>
+			<input type = "text" name = "topic"><br>
+		Idea<br>
+			<textarea rows="5" cols="75" maxlength = "375" name = "idea"></textarea><br>
+		How can we possibly integrate this idea?<br>
+			<textarea rows="5" cols="75" maxlength = "375" name = "integrate"></textarea><br>
+		<input type = "submit" name = "submit" value = "Submit">
+	</form>
+<body>
